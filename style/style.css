@@ -1,0 +1,1517 @@
+    /*font-family: 'Raleway', sans-serif;*/
+    /*BACKGROUND CSS*/
+    
+    @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+    
+    .context {
+        width: 100%;
+        position: absolute;
+        top: 50vh;
+    }
+    
+    .context h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+    }
+    
+    .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        position: absolute;
+    }
+    
+    .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+    }
+    
+    .circles li:nth-child(1) {
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+    }
+    
+    .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+    }
+    
+    .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+    }
+    
+    .circles li:nth-child(4) {
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+    }
+    
+    .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+    }
+    
+    .circles li:nth-child(6) {
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+    }
+    
+    .circles li:nth-child(7) {
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+    }
+    
+    .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+    
+    .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+    
+    .circles li:nth-child(10) {
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+        100% {
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
+    }
+    /*MAIN SITE*/
+    
+    .main {
+        position: absolute;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .navbar-mobile {
+        display: none;
+    }
+    /*NAVBAR*/
+    
+    .navbar {
+        position: relative;
+        padding-top: 1vw;
+        padding-left: 5vw;
+    }
+    
+    .logotype {
+        cursor: pointer;
+    }
+    
+    .logotype-light {
+        font-weight: 600;
+        border-radius: 0.4vw;
+        font-size: 2vw;
+        padding: 0vw 1.5vw 0vw 1.5vw;
+        color: white;
+        background: linear-gradient(to right, white 50%, transparent 50%);
+        background-size: 201% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease;
+    }
+    
+    .logotype-smm {
+        font-weight: 600;
+        font-size: 2vw;
+        padding-left: 0vw;
+        position: relative;
+        left: 0vw;
+        color: #4E54C8;
+        border-radius: 0.4vw;
+        padding: 0vw 1.5vw 0vw 1.5vw;
+        background: linear-gradient(to right, transparent 50%, white 50%);
+        background-size: 201% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease;
+    }
+    
+    .fa-bolt {
+        color: white;
+        position: relative;
+        left: 1vw;
+        top: 0.3vw;
+        font-size: 2vw;
+        transform: translate3d(0, - 100%, 0);
+        animation: spin 1.0s infinite linear;
+    }
+    
+    .logotype:hover .logotype-smm {
+        background-position: left bottom;
+        color: white;
+    }
+    
+    .logotype:hover .logotype-light {
+        background-position: left bottom;
+        color: #4e54c8;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: translate3d(0, -12%, 0);
+        }
+        50% {
+            transform: translate3d(0, 12%, 0);
+        }
+        100% {
+            transform: translate3d(0, -12%, 0);
+        }
+    }
+    
+    .navbar-links {
+        position: relative;
+        padding-left: 33vw;
+        padding-top: 1vw;
+        color: white;
+    }
+    
+    .navbar-links li {
+        padding-right: 2vw;
+    }
+    
+    .navbar-links li>p {
+        cursor: pointer;
+    }
+    
+    .menu-hr {
+        height: 0.1vw;
+        background: white;
+        border-radius: 1vw;
+        width: 0%;
+        bottom: 0.4vw;
+        position: relative;
+        transition: 0.3s;
+    }
+    
+    .navbar-link:hover .menu-hr {
+        width: 100%;
+    }
+    
+    .registration {
+        border-radius: 7px;
+        width: 10vw;
+        height: 2.2vw;
+        bottom: 0.5vw;
+        position: relative;
+        border: 1px #fff solid;
+        color: white;
+        background: linear-gradient(to right, white 50%, transparent 50%);
+        background-size: 201% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease;
+    }
+    
+    .registration:hover {
+        background-position: left bottom;
+        color: #4e54c8;
+    }
+    
+    .fa-user {
+        margin-right: 1vw;
+        position: relative;
+        right: 0.3vw;
+    }
+    
+    .auth {
+        position: relative;
+        left: 0.5vw;
+        cursor: pointer;
+    }
+    
+    .fa-sign-in-alt {
+        position: relative;
+        right: 0.3vw;
+    }
+    
+    .vertborder {
+        width: 2.1vw;
+        transform: rotate(90deg);
+        background: #fff;
+        height: 1px;
+        position: relative;
+        left: 1.5vw;
+        transition: 0.5s;
+        bottom: 1.6vw;
+    }
+    
+    .registration span {
+        margin-left: 0.5vw;
+    }
+    /*BODY*/
+    
+    .body {
+        position: relative;
+        padding-top: 10vw;
+        padding-left: 5vw;
+        display: flex;
+    }
+    
+    .body-card {
+        width: 15vw;
+        height: 23vw;
+        background: white;
+        border-radius: 1vw;
+        border: 0.2vw transparent solid;
+        margin-right: 3vw;
+        transition: 0.4s;
+    }
+    
+    .header-card {
+        position: relative;
+        left: 20%;
+        padding-top: 2vw;
+        color: #4e54c8;
+        transition: 0.4s;
+        transform: scale(1.0);
+    }
+    
+    .fab {
+        font-weight: 500;
+        font-size: 2.5vw;
+        margin-right: 0.7vw;
+    }
+    
+    .header-card span {
+        position: relative;
+        top: 0.3vw;
+        font-size: 1.4vw;
+        font-weight: 600;
+    }
+    
+    .center-card {
+        width: 13vw;
+        text-align: center;
+        position: relative;
+        padding-top: 3vw;
+        font-size: 0.9vw;
+        left: 1vw;
+        transition: 0.4s;
+    }
+    
+    .body-card-button {
+        position: relative;
+        border: 0.1vw transparent solid;
+        background: #4e54c8;
+        font-size: 1vw;
+        top: 4.5vw;
+        border-radius: 0.3vw;
+        left: 2.7vw;
+        color: white;
+        padding: 0.3vw 2.5vw 0.4vw 2.5vw;
+    }
+    /*CARD HOVER*/
+    
+    .body-card:hover {
+        background: #4e54c8;
+        border: 0.2vw #fff solid;
+        transform: scale(1.1);
+    }
+    
+    .body-card:hover .body-card-button {
+        background: #4e54c8;
+        border: 0.1vw #fff solid;
+        color: white;
+    }
+    
+    .body-card:hover .header-card {
+        color: white;
+        font-weight: 500;
+        transform: scale(1.0);
+    }
+    
+    .body-card:hover .center-card {
+        color: white;
+    }
+    
+    .popup-fade {
+        display: none;
+    }
+    
+    .popup-fade:before {
+        content: '';
+        background: #000;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        z-index: 9999;
+    }
+    
+    .popup {
+        position: fixed;
+        top: 15%;
+        left: 48%;
+        padding: 20px;
+        width: 470px;
+        height: 670px;
+        margin-left: -200px;
+        background: #4e54c8;
+        border-radius: 0.7vw;
+        z-index: 99999;
+        opacity: 1;
+        color: white;
+    }
+    
+    .popup-header span {
+        position: relative;
+        top: 0.8vw;
+        font-size: 1.8vw;
+        color: white;
+        left: 0.5vw;
+    }
+    
+    .popup-header i {
+        font-size: 3vw;
+        position: relative;
+        top: 1.3vw;
+        right: 0.1vw;
+    }
+    
+    .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .popup-header {
+        position: relative;
+        right: 0.5vw;
+    }
+    
+    .popup-center p {
+        position: relative;
+        width: 20vw;
+        text-align: center;
+        position: relative;
+        left: 1.3vw;
+        top: 7vw;
+        font-size: 1vw;
+    }
+    
+    .popup-buttons {
+        position: relative;
+        padding-top: 12vw;
+    }
+    
+    .buttons {
+        padding-bottom: 1vw;
+    }
+    
+    .buy-button {
+        position: absolute;
+        width: 8vw;
+        height: 2.2vw;
+        font-weight: 500;
+        left: 13.5vw;
+        border: 1px transparent solid;
+        background: white;
+        border-radius: 0.3vw;
+        transition: 0.3s;
+    }
+    
+    .buttons p {
+        position: relative;
+        left: 1.5vw;
+        top: 0.5vw;
+    }
+    
+    .buy-button:hover {
+        border: 1px white solid;
+        background: #4e54c8;
+        color: white;
+    }
+    
+    @media (max-width: 1693px) {
+        .navbar-links {
+            padding-left: 30vw;
+        }
+        .fa-user {
+            margin-right: 1vw;
+            right: 0vw;
+            font-size: 0.8vw;
+        }
+        .popup {
+            top: 10%;
+            left: 48%;
+            width: 450px;
+            height: 600px;
+        }
+        .popup-center p {
+            left: 1.6vw;
+        }
+    }
+    
+    @media (max-width: 1600px) {
+        .navbar-links {
+            padding-left: 29vw;
+        }
+        .vertborder {
+            width: 2.0vw;
+        }
+        .fa-user {
+            position: relative;
+            left: 0.2vw;
+        }
+    }
+    
+    @media (max-width: 1491px) {
+        .navbar-links {
+            padding-left: 27vw;
+        }
+        .registration span {
+            font-size: 0.9vw;
+            position: relative;
+        }
+        .fa-user {
+            position: relative;
+            left: 0vw;
+            bottom: 0.05vw;
+        }
+        .header-card span {
+            position: relative;
+            top: 0.0vw;
+            font-weight: 600;
+        }
+        .registration {
+            bottom: 0.2vw;
+        }
+        .vertborder {
+            bottom: 1.3vw;
+        }
+        .popup {
+            top: 10%;
+            left: 50%;
+            width: 420px;
+            height: 550px;
+        }
+        .buttons {
+            padding-bottom: 1vw;
+            left: 2vw;
+            position: relative;
+        }
+        .navbar-links {
+            padding-left: 25vw;
+        }
+        .popup-center p {
+            left: 3.6vw;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .body {
+            flex-wrap: wrap;
+            position: relative;
+            max-width: 100vw;
+        }
+        .body-card {
+            width: 250px;
+            height: 350px;
+            margin-right: 3vw;
+            margin-bottom: 3vw;
+        }
+        .area {
+            height: 120vh;
+        }
+        .fab {
+            font-weight: 500;
+            font-size: 3.5vw;
+            margin-right: 0.7vw;
+        }
+        .header-card span {
+            position: relative;
+            top: 0.4vw;
+            padding-left: 1vw;
+            font-size: 1.6vw;
+        }
+        .center-card {
+            width: 20vw;
+            padding-top: 3vw;
+            font-size: 1.4vw;
+            left: 2vw;
+        }
+        .body-card-button {
+            font-size: 1.5vw;
+            top: 8.5vw;
+            border-radius: 1vw;
+            left: 5.0vw;
+            padding: 0.5vw 3.5vw 0.5vw 3.5vw;
+        }
+        .popup {
+            border-radius: 2vw;
+        }
+        .popup-header i {
+            font-size: 5vw;
+            top: 1.3vw;
+            right: 2vw;
+        }
+        .popup-header span {
+            top: 0.3vw;
+            font-size: 2.8vw;
+            left: 0vw;
+        }
+        .popup-center p {
+            left: 3.5vw;
+            font-size: 1.6vw;
+            width: 30vw;
+        }
+        .buttons p {
+            font-size: 2vw;
+        }
+        .buy-button {
+            position: absolute;
+            width: 13vw;
+            height: 3.2vw;
+            top: 0.5vw;
+            left: 18.5vw;
+        }
+        .popup-buttons {
+            padding-top: 17vw;
+        }
+        .navbar {
+            padding-top: 2vw;
+        }
+        .navbar-links li {
+            padding-right: 2vw;
+            font-size: 1.2vw;
+        }
+        .navbar-links {
+            padding-left: 17vw;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .navbar-links li {
+            padding-right: 2vw;
+            font-size: 1.5vw;
+        }
+        .registration {
+            border-radius: 7px;
+            width: 15vw;
+            height: 3.2vw;
+        }
+        .registration span {
+            font-size: 1.3vw;
+            position: relative;
+        }
+        .fa-user {
+            position: relative;
+            font-size: 1.3vw;
+            bottom: 0.05vw;
+        }
+        .fa-user {
+            position: relative;
+            left: 0vw;
+            font-size: 1.3vw;
+            bottom: 0.05vw;
+        }
+        .vertborder {
+            bottom: 2vw;
+            left: 3.1vw;
+            width: 3vw;
+        }
+        .registration span {
+            font-size: 1.3vw;
+            left: 0.5vw;
+            position: relative;
+        }
+        .navbar-links {
+            padding-left: 10vw;
+        }
+        .body {
+            flex-wrap: wrap;
+            position: relative;
+            max-width: 100vw;
+            padding-left: 13vw;
+        }
+        .fab {
+            font-size: 4.5vw;
+            margin-right: 0.7vw;
+        }
+        .header-card span {
+            font-size: 2.3vw;
+        }
+        .header-card {
+            position: relative;
+            left: 23%;
+        }
+        .center-card {
+            width: 25vw;
+            padding-top: 7vw;
+            font-size: 1.8vw;
+            left: 3vw;
+        }
+        .body-card-button {
+            font-size: 1.5vw;
+            height: 4vw;
+            top: 12.5vw;
+            width: 18vw;
+            left: 6.8vw;
+        }
+        .area {
+            height: 150vh;
+        }
+        .popup-header span {
+            top: 0.3vw;
+            font-size: 3.8vw;
+            left: 0vw;
+        }
+        .popup-header i {
+            font-size: 7vw;
+            top: 1.3vw;
+            right: 2vw;
+        }
+        .popup-center p {
+            left: 4.5vw;
+            font-size: 2vw;
+            width: 38vw;
+        }
+        .popup-buttons {
+            padding-top: 24vw;
+            padding-left: 2vw;
+        }
+        .buy-button {
+            position: absolute;
+            width: 18vw;
+            height: 4.2vw;
+            border-radius: 1vw;
+            top: 0.0vw;
+            left: 20.5vw;
+        }
+        .navbar-links {
+            padding-left: 10vw;
+            padding-top: 0.4vw;
+        }
+        .registration {
+            border-radius: 7px;
+            width: 15vw;
+            bottom: 0.4vw;
+            height: 3.2vw;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        /*NAVBAR MOBILE*/
+        .navbar {
+            display: none;
+        }
+        .navbar-mobile {
+            display: block;
+            position: relative;
+            top: 0vw;
+        }
+        .navbar-mobile-logo {
+            position: relative;
+            width: 30vw;
+            top: 3vw;
+            right: 11vw;
+        }
+        .mobile-navbar-links {
+            height: 20vw;
+            position: relative;
+            right: 0vw;
+        }
+        .logotype-mobile {
+            font-size: 6vw;
+            position: relative;
+            right: 8vw;
+            top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 79vw;
+            bottom: 9vw;
+        }
+        .navbar-mobile-menu {
+            color: white;
+            display: inline-block;
+            height: 30vw;
+            position: absolute;
+            z-index: 999;
+            width: 80vw;
+            top: 20vw;
+            border-radius: 1vw;
+            left: 6vw;
+            height: 0vw;
+            -webkit-transition: height 0.8s;
+            -moz-transition: height 0.8s;
+            transition: height 0.8s;
+        }
+        .mobile-background-active {
+            height: 90vw;
+            background: white !important;
+        }
+        .mobile-background-default {
+            height: 0vw !important;
+            background: white !important;
+        }
+        .navbar-mobile-menu ul>li {
+            margin-bottom: -3vw;
+            position: relative;
+            right: 4vw;
+            top: 5vw;
+        }
+        .navbar-links li:hover {
+            color: #FF0000;
+        }
+        .navbar-links li:hover .navbar-hr {
+            width: 100%;
+            line-height: 0vw;
+        }
+        .mob-n-links {
+            position: relative;
+            top: 4vw;
+            color: #4e54c8;
+            position: relative;
+            font-weight: 500;
+            font-size: 4vw;
+        }
+        .logotype-light {
+            font-size: 5vw;
+        }
+        .logotype-smm {
+            font-size: 5vw;
+        }
+        .fa-bolt {
+            color: white;
+            position: relative;
+            left: 1vw;
+            top: 0.3vw;
+            font-size: 4vw;
+        }
+        .logotype {
+            position: relative;
+            padding-top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 80vw;
+            bottom: 11vw;
+        }
+        .auth {
+            color: #4e54c8;
+            position: relative;
+            left: 30vw;
+        }
+        .registration {
+            position: relative;
+            left: 20vw;
+            color: #4e54c8;
+            border: 1px #4e54c8 solid;
+            width: 40vw;
+            height: 8vw;
+        }
+        .fa-user {
+            position: relative;
+            left: 0vw;
+            font-size: 3.3vw;
+            bottom: 0vw;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 29vw;
+            bottom: 4vw;
+            height: 0.1vw;
+            width: 5.9vw;
+        }
+        .fa-adaptive {
+            position: relative;
+            right: 13vw;
+        }
+        .registration span {
+            font-size: 2.9vw;
+            left: 5vw;
+            bottom: 6.3vw;
+            position: relative;
+        }
+        .auth-mob i {
+            position: relative;
+            left: 30vw;
+            color: #4e54c8;
+        }
+        .auth-mob span {
+            position: relative;
+            left: 30vw;
+            color: #4e54c8;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 27.5vw;
+            bottom: 4.2vw;
+            height: 0.1vw;
+            width: 7.5vw;
+        }
+        .body {
+            padding-left: 15vw;
+        }
+        .body-card {
+            border-radius: 4vw;
+        }
+        .body-card {
+            width: 250px;
+            height: 350px;
+            margin-right: 3vw;
+            margin-bottom: 10vw;
+        }
+        .fab {
+            font-size: 7.5vw;
+            margin-right: 0.7vw;
+        }
+        .header-card span {
+            font-size: 4.3vw;
+            padding-left: 2vw;
+        }
+        .header-card {
+            position: relative;
+            left: 23%;
+            padding-top: 5vw;
+        }
+        .center-card {
+            width: 55vw;
+            padding-top: 15vw;
+            font-size: 2.8vw;
+            left: 2.5vw;
+        }
+        .body-card-button {
+            font-size: 2.5vw;
+            height: 7vw;
+            top: 30.5vw;
+            width: 35vw;
+            left: 11.8vw;
+        }
+        .area {
+            height: 260vh;
+        }
+        .popup {
+            top: 15%;
+            left: 64%;
+            width: 280px;
+            height: 360px;
+        }
+        .popup-header i {
+            font-size: 9vw;
+            top: 1.3vw;
+            right: 2vw;
+        }
+        .popup-header span {
+            top: 0vw;
+            font-size: 4.8vw;
+            left: 0vw;
+        }
+        .popup-center p {
+            left: 5vw;
+            font-size: 2.4vw;
+            width: 45vw;
+            top: 10vw;
+        }
+        .buttons p {
+            font-size: 3vw;
+        }
+        .buttons {
+            padding-bottom: 1vw;
+            left: 0vw;
+            position: relative;
+        }
+        .buy-button {
+            position: absolute;
+            width: 28vw;
+            height: 6.2vw;
+            border-radius: 1.5vw;
+            font-size: 2.5vw;
+            top: 0.0vw;
+            left: 25.5vw;
+        }
+        .body-card:hover {
+            background: white;
+            border: 0.2vw #fff solid;
+            transform: scale(1.0);
+            color: #4e54c8;
+        }
+        .body-card:hover .body-card-button {
+            background: #4e54c8;
+            border: 0.1vw #4e54c8 solid;
+            color: #fff;
+        }
+        .body-card:hover .header-card {
+            color: #4e54c8;
+            font-weight: 500;
+            transform: scale(1.0);
+        }
+        .body-card:hover .center-card {
+            color: #4e54c8;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        /*NAVBAR MOBILE*/
+        .navbar {
+            display: none;
+        }
+        .navbar-mobile {
+            display: block;
+            position: relative;
+            top: 0vw;
+        }
+        .navbar-mobile-logo {
+            position: relative;
+            width: 30vw;
+            top: 3vw;
+            right: 11vw;
+        }
+        .mobile-navbar-links {
+            height: 20vw;
+            position: relative;
+            right: 0vw;
+        }
+        .logotype-mobile {
+            font-size: 6vw;
+            position: relative;
+            right: 8vw;
+            top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 68vw;
+            bottom: 9vw;
+        }
+        .navbar-mobile-menu {
+            color: white;
+            display: inline-block;
+            height: 30vw;
+            position: absolute;
+            z-index: 999;
+            width: 80vw;
+            top: 20vw;
+            border-radius: 1vw;
+            left: 6vw;
+            height: 0vw;
+            -webkit-transition: height 0.8s;
+            -moz-transition: height 0.8s;
+            transition: height 0.8s;
+        }
+        .mobile-background-active {
+            height: 90vw;
+            background: white !important;
+        }
+        .mobile-background-default {
+            height: 0vw !important;
+            background: white !important;
+        }
+        .navbar-mobile-menu ul>li {
+            margin-bottom: -3vw;
+            position: relative;
+            right: 4vw;
+            top: 5vw;
+        }
+        .navbar-links li:hover {
+            color: #FF0000;
+        }
+        .navbar-links li:hover .navbar-hr {
+            width: 100%;
+            line-height: 0vw;
+        }
+        .mob-n-links {
+            position: relative;
+            top: 4vw;
+            color: #4e54c8;
+            position: relative;
+            font-weight: 500;
+            font-size: 4vw;
+        }
+        .logotype-light {
+            font-size: 5vw;
+        }
+        .logotype-smm {
+            font-size: 5vw;
+        }
+        .fa-bolt {
+            color: white;
+            position: relative;
+            left: 1vw;
+            top: 0.3vw;
+            font-size: 4vw;
+        }
+        .logotype {
+            position: relative;
+            padding-top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 78vw;
+            bottom: 11vw;
+        }
+        .auth {
+            color: #4e54c8;
+            position: relative;
+            left: 30vw;
+        }
+        .registration {
+            position: relative;
+            left: 20vw;
+            color: #4e54c8;
+            border: 1px #4e54c8 solid;
+            width: 40vw;
+            height: 8vw;
+        }
+        .fa-user {
+            position: relative;
+            left: 0vw;
+            font-size: 3.3vw;
+            bottom: 0vw;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 29vw;
+            bottom: 4vw;
+            height: 0.1vw;
+            width: 5.9vw;
+        }
+        .fa-adaptive {
+            position: relative;
+            right: 13vw;
+        }
+        .registration span {
+            font-size: 2.9vw;
+            left: 5vw;
+            bottom: 6.3vw;
+            position: relative;
+        }
+        .auth-mob i {
+            position: relative;
+            left: 30vw;
+            color: #4e54c8;
+        }
+        .auth-mob span {
+            position: relative;
+            left: 30vw;
+            color: #4e54c8;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 27.5vw;
+            bottom: 4.2vw;
+            height: 0.1vw;
+            width: 7.5vw;
+        }
+        .body {
+            padding-left: 12vw;
+        }
+        .body-card {
+            border-radius: 4vw;
+        }
+        .body-card {
+            width: 250px;
+            height: 350px;
+            margin-right: 3vw;
+            margin-bottom: 10vw;
+        }
+        .fab {
+            font-size: 7.5vw;
+            margin-right: 0.7vw;
+        }
+        .header-card span {
+            font-size: 4.3vw;
+            padding-left: 2vw;
+        }
+        .header-card {
+            position: relative;
+            left: 23%;
+            padding-top: 5vw;
+        }
+        .center-card {
+            width: 55vw;
+            padding-top: 15vw;
+            font-size: 2.8vw;
+            left: 6vw;
+        }
+        .body-card-button {
+            font-size: 2.5vw;
+            height: 7vw;
+            top: 30.5vw;
+            width: 35vw;
+            left: 14.8vw;
+        }
+        .area {
+            height: 260vh;
+        }
+        .popup {
+            top: 15%;
+            left: 68%;
+            width: 250px;
+            height: 325px;
+        }
+        .popup-header i {
+            font-size: 9vw;
+            top: 1.3vw;
+            right: 2vw;
+        }
+        .popup-header span {
+            top: 0vw;
+            font-size: 4.8vw;
+            left: 0vw;
+        }
+        .popup-center p {
+            left: 5vw;
+            font-size: 2.4vw;
+            width: 45vw;
+            top: 10vw;
+        }
+        .buttons p {
+            font-size: 3vw;
+        }
+        .buttons {
+            padding-bottom: 1vw;
+            left: 0vw;
+            position: relative;
+        }
+        .buy-button {
+            position: absolute;
+            width: 28vw;
+            height: 6.2vw;
+            border-radius: 1.5vw;
+            font-size: 2.5vw;
+            top: 0.0vw;
+            left: 25.5vw;
+        }
+        .body-card:hover {
+            background: white;
+            border: 0.2vw #fff solid;
+            transform: scale(1.0);
+            color: #4e54c8;
+        }
+        .body-card:hover .body-card-button {
+            background: #4e54c8;
+            border: 0.1vw #4e54c8 solid;
+            color: #fff;
+        }
+        .body-card:hover .header-card {
+            color: #4e54c8;
+            font-weight: 500;
+            transform: scale(1.0);
+        }
+        .body-card:hover .center-card {
+            color: #4e54c8;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        /*NAVBAR MOBILE*/
+        .navbar {
+            display: none;
+        }
+        .navbar-mobile {
+            display: block;
+            position: relative;
+            top: 0vw;
+        }
+        .navbar-mobile-logo {
+            position: relative;
+            width: 30vw;
+            top: 3vw;
+            right: 11vw;
+        }
+        .mobile-navbar-links {
+            height: 20vw;
+            position: relative;
+            right: 0vw;
+        }
+        .logotype-mobile {
+            font-size: 6vw;
+            position: relative;
+            right: 8vw;
+            top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 68vw;
+            bottom: 9vw;
+        }
+        .navbar-mobile-menu {
+            color: white;
+            display: inline-block;
+            height: 30vw;
+            position: absolute;
+            z-index: 999;
+            width: 80vw;
+            top: 20vw;
+            border-radius: 1vw;
+            left: 6vw;
+            height: 0vw;
+            -webkit-transition: height 0.8s;
+            -moz-transition: height 0.8s;
+            transition: height 0.8s;
+        }
+        .mobile-background-active {
+            height: 90vw;
+            background: white !important;
+        }
+        .mobile-background-default {
+            height: 0vw !important;
+            background: white !important;
+        }
+        .navbar-mobile-menu ul>li {
+            margin-bottom: -3vw;
+            position: relative;
+            right: 4vw;
+            top: 5vw;
+        }
+        .navbar-links li:hover {
+            color: #FF0000;
+        }
+        .navbar-links li:hover .navbar-hr {
+            width: 100%;
+            line-height: 0vw;
+        }
+        .mob-n-links {
+            position: relative;
+            top: 4vw;
+            color: #4e54c8;
+            position: relative;
+            font-weight: 500;
+            font-size: 4vw;
+        }
+        .logotype-light {
+            font-size: 5vw;
+        }
+        .logotype-smm {
+            font-size: 5vw;
+        }
+        .fa-bolt {
+            color: white;
+            position: relative;
+            left: 1vw;
+            top: 0.3vw;
+            font-size: 4vw;
+        }
+        .logotype {
+            position: relative;
+            padding-top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 78vw;
+            bottom: 11vw;
+        }
+        .auth {
+            color: #4e54c8;
+            position: relative;
+            left: 30vw;
+        }
+        .registration {
+            position: relative;
+            left: 20vw;
+            color: #4e54c8;
+            border: 1px #4e54c8 solid;
+            width: 40vw;
+            height: 8vw;
+        }
+        .fa-user {
+            position: relative;
+            left: 0vw;
+            font-size: 3.3vw;
+            bottom: 0vw;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 29vw;
+            bottom: 4vw;
+            height: 0.1vw;
+            width: 5.9vw;
+        }
+        .fa-adaptive {
+            position: relative;
+            right: 13vw;
+        }
+        .registration span {
+            font-size: 2.9vw;
+            left: 5vw;
+            bottom: 6.3vw;
+            position: relative;
+        }
+        .auth-mob i {
+            position: relative;
+            left: 30vw;
+            color: #4e54c8;
+        }
+        .auth-mob span {
+            position: relative;
+            left: 30vw;
+            color: #4e54c8;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 27.5vw;
+            bottom: 4.2vw;
+            height: 0.1vw;
+            width: 7.5vw;
+        }
+        .body-card {
+            border-radius: 4vw;
+        }
+        .body-card {
+            width: 250px;
+            height: 350px;
+            margin-right: 3vw;
+            margin-bottom: 10vw;
+        }
+        .fab {
+            font-size: 7.5vw;
+            margin-right: 0.7vw;
+        }
+        .header-card span {
+            font-size: 4.3vw;
+            padding-left: 2vw;
+        }
+        .header-card {
+            position: relative;
+            left: 23%;
+            padding-top: 5vw;
+        }
+        .center-card {
+            width: 55vw;
+            padding-top: 15vw;
+            font-size: 2.8vw;
+            left: 6vw;
+        }
+        .body-card-button {
+            font-size: 2.5vw;
+            height: 7vw;
+            top: 30.5vw;
+            width: 35vw;
+            left: 14.8vw;
+        }
+        .area {
+            height: 260vh;
+        }
+        .popup {
+            top: 15%;
+            left: 68%;
+            width: 250px;
+            height: 325px;
+        }
+        .popup-header i {
+            font-size: 9vw;
+            top: 1.3vw;
+            right: 2vw;
+        }
+        .popup-header span {
+            top: 0vw;
+            font-size: 4.8vw;
+            left: 0vw;
+        }
+        .popup-center p {
+            left: 5vw;
+            font-size: 2.4vw;
+            width: 45vw;
+            top: 10vw;
+        }
+        .buttons p {
+            font-size: 3vw;
+        }
+        .buttons {
+            padding-bottom: 1vw;
+            left: 0vw;
+            position: relative;
+        }
+        .buy-button {
+            position: absolute;
+            width: 28vw;
+            height: 6.2vw;
+            border-radius: 1.5vw;
+            font-size: 2.5vw;
+            top: 0.0vw;
+            left: 25.5vw;
+        }
+        .body-card:hover {
+            background: white;
+            border: 0.2vw #fff solid;
+            transform: scale(1.0);
+            color: #4e54c8;
+        }
+        .body-card:hover .body-card-button {
+            background: #4e54c8;
+            border: 0.1vw #4e54c8 solid;
+            color: #fff;
+        }
+        .body-card:hover .header-card {
+            color: #4e54c8;
+            font-weight: 500;
+            transform: scale(1.0);
+        }
+        .body-card:hover .center-card {
+            color: #4e54c8;
+        }
+    }
