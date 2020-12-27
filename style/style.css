@@ -324,7 +324,7 @@
     
     .header-card {
         position: relative;
-        left: 20%;
+        left: 17%;
         padding-top: 2vw;
         color: #4e54c8;
         transition: 0.4s;
@@ -949,7 +949,7 @@
             left: 11.8vw;
         }
         .area {
-            height: 260vh;
+            height: 290vh;
         }
         .popup {
             top: 15%;
@@ -1454,7 +1454,7 @@
             left: 14.8vw;
         }
         .area {
-            height: 260vh;
+            height: 380vh;
         }
         .popup {
             top: 15%;
