@@ -1644,7 +1644,7 @@
             width: 80vw;
             top: 20vw;
             border-radius: 1vw;
-            left: 10vw;
+            left: 6.3vw;
             height: 0vw;
             -webkit-transition: height 0.8s;
             -moz-transition: height 0.8s;
@@ -1713,7 +1713,7 @@
             border: 1px #4e54c8 solid;
             width: 40vw;
             height: 8vw;
-            top: 9.5vw;
+            top: 4.3vw;
         }
         .fa-user {
             position: relative;
