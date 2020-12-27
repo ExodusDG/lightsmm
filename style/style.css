@@ -28,7 +28,7 @@
         background: #4e54c8;
         background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
         width: 100%;
-        height: 100vh;
+        height: 50.45vw;
         background-size: cover;
         position: absolute;
     }
@@ -507,6 +507,9 @@
         .popup-center p {
             left: 1.6vw;
         }
+        .area {
+            height: 53vw;
+        }
     }
     
     @media (max-width: 1600px) {
@@ -519,6 +522,9 @@
         .fa-user {
             position: relative;
             left: 0.2vw;
+        }
+        .area {
+            height: 56vw;
         }
     }
     
@@ -539,6 +545,9 @@
             position: relative;
             top: 0.0vw;
             font-weight: 600;
+        }
+        .area {
+            height: 60vw;
         }
         .registration {
             bottom: 0.2vw;
@@ -565,6 +574,21 @@
         }
     }
     
+    @media (max-width: 1440px) {
+        .area {
+            height: 80vw;
+        }
+    }
+    
+    @media (max-width: 1280px) {
+        .area {
+            height: 80vw;
+        }
+        .body {
+            padding-top: 20vw;
+        }
+    }
+    
     @media (max-width: 1024px) {
         .body {
             flex-wrap: wrap;
@@ -578,7 +602,7 @@
             margin-bottom: 3vw;
         }
         .area {
-            height: 120vh;
+            height: 110vw;
         }
         .fab {
             font-weight: 500;
@@ -716,7 +740,7 @@
             left: 6.8vw;
         }
         .area {
-            height: 150vh;
+            height: 180vw;
         }
         .popup-header span {
             top: 0.3vw;
@@ -757,6 +781,279 @@
         }
     }
     
+    @media (max-width: 720px) {
+        .area {
+            height: 190vw;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        /*NAVBAR MOBILE*/
+        .navbar {
+            display: none;
+        }
+        .navbar-hr {
+            position: relative;
+            top: 2vw;
+        }
+        .navbar-mobile {
+            display: block;
+            position: relative;
+            top: 0vw;
+        }
+        .navbar-mobile-logo {
+            position: relative;
+            width: 30vw;
+            top: 3vw;
+            right: 11vw;
+        }
+        .mobile-navbar-links {
+            height: 20vw;
+            position: relative;
+            right: 0vw;
+        }
+        .logotype-mobile {
+            font-size: 6vw;
+            position: relative;
+            right: 8vw;
+            top: 3vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 79vw;
+            bottom: 9vw;
+        }
+        .navbar-mobile-menu {
+            color: white;
+            display: inline-block;
+            height: 30vw;
+            position: absolute;
+            z-index: 999;
+            width: 80vw;
+            top: 20vw;
+            border-radius: 1vw;
+            left: 8vw;
+            height: 0vw;
+            -webkit-transition: height 0.8s;
+            -moz-transition: height 0.8s;
+            transition: height 0.8s;
+        }
+        .mobile-background-active {
+            height: 87vw;
+            background: white !important;
+        }
+        .mobile-background-default {
+            height: 0vw !important;
+            background: white !important;
+        }
+        .navbar-mobile-menu ul>li {
+            margin-bottom: -3vw;
+            position: relative;
+            right: 4vw;
+            top: 5vw;
+        }
+        .navbar-links li:hover {
+            color: #FF0000;
+        }
+        .navbar-links li:hover .navbar-hr {
+            width: 100%;
+            line-height: 0vw;
+        }
+        .mob-n-links {
+            position: relative;
+            top: 4vw;
+            color: #4e54c8;
+            position: relative;
+            font-weight: 500;
+            font-size: 4vw;
+        }
+        .logotype-light {
+            font-size: 5vw;
+        }
+        .logotype-smm {
+            font-size: 5vw;
+        }
+        .fa-bolt {
+            color: white;
+            position: relative;
+            left: 1vw;
+            top: 0.3vw;
+            font-size: 4vw;
+        }
+        .logotype {
+            position: relative;
+            padding-top: 4vw;
+            padding-left: 5vw;
+        }
+        .hamburger {
+            position: relative;
+            left: 83vw;
+            bottom: 9.5vw;
+        }
+        .auth {
+            color: #4e54c8;
+            position: relative;
+            left: 30vw;
+        }
+        .registration {
+            position: relative;
+            left: 20vw;
+            color: #4e54c8;
+            border: 1px #4e54c8 solid;
+            width: 40vw;
+            top: 3.9vw;
+            height: 8vw;
+        }
+        .fa-user {
+            position: relative;
+            font-size: 3.8vw;
+            top: 1.5vw;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 29vw;
+            height: 0.1vw;
+            top: 0vw;
+            width: 5.9vw;
+        }
+        .fa-adaptive {
+            position: relative;
+            right: 13vw;
+        }
+        .registration span {
+            font-size: 3.5vw;
+            left: 5vw;
+            bottom: 3.3vw;
+            position: relative;
+        }
+        .auth-mob i {
+            position: relative;
+            left: 30vw;
+            font-size: 4vw;
+            top: 4vw;
+            color: #4e54c8;
+        }
+        .auth-mob span {
+            position: relative;
+            left: 30vw;
+            font-size: 4vw;
+            top: 4vw;
+            color: #4e54c8;
+        }
+        .vertborder {
+            background: #4e54c8;
+            z-index: 999;
+            left: 27.5vw;
+            bottom: 4.2vw;
+            height: 0.1vw;
+            width: 7.5vw;
+        }
+        .body {
+            padding-left: 20vw;
+        }
+        .body-card {
+            border-radius: 4vw;
+        }
+        .body-card {
+            width: 280px;
+            height: 370x;
+            margin-right: 3vw;
+            margin-bottom: 10vw;
+        }
+        .fab {
+            font-size: 7.5vw;
+            margin-right: 0.7vw;
+        }
+        .header-card span {
+            font-size: 4.3vw;
+            padding-left: 2vw;
+        }
+        .header-card {
+            position: relative;
+            left: 23%;
+            padding-top: 5vw;
+        }
+        .center-card {
+            width: 44vw;
+            padding-top: 15vw;
+            font-size: 2.8vw;
+            left: 5.5vw;
+        }
+        .body-card-button {
+            font-size: 2.5vw;
+            height: 7vw;
+            top: 10vw;
+            width: 35vw;
+            left: 10vw;
+        }
+        .area {
+            height: 450vw;
+        }
+        .popup {
+            top: 28%;
+            left: 60%;
+            width: 280px;
+            height: 360px;
+        }
+        .popup-buttons {
+            padding-top: 15vw;
+            padding-left: 0vw;
+        }
+        .popup-header i {
+            font-size: 9vw;
+            top: 1.3vw;
+            right: 2vw;
+        }
+        .popup-header span {
+            top: 0vw;
+            font-size: 4.8vw;
+            left: 0vw;
+        }
+        .popup-center p {
+            left: 2vw;
+            font-size: 2.4vw;
+            width: 45vw;
+            top: 5vw;
+        }
+        .buttons p {
+            font-size: 3vw;
+        }
+        .buttons {
+            padding-bottom: 1vw;
+            left: 0vw;
+            position: relative;
+        }
+        .buy-button {
+            position: absolute;
+            width: 22vw;
+            height: 6.2vw;
+            border-radius: 1.5vw;
+            font-size: 2.5vw;
+            top: 0.0vw;
+            left: 25.5vw;
+        }
+        .body-card:hover {
+            background: white;
+            border: 0.2vw #fff solid;
+            transform: scale(1.0);
+            color: #4e54c8;
+        }
+        .body-card:hover .body-card-button {
+            background: #4e54c8;
+            border: 0.1vw #4e54c8 solid;
+            color: #fff;
+        }
+        .body-card:hover .header-card {
+            color: #4e54c8;
+            font-weight: 500;
+            transform: scale(1.0);
+        }
+        .body-card:hover .center-card {
+            color: #4e54c8;
+        }
+    }
+    
     @media (max-width: 414px) {
         /*NAVBAR MOBILE*/
         .navbar {
@@ -765,6 +1062,7 @@
         .navbar-mobile {
             display: block;
             position: relative;
+            left: 3vw;
             top: 0vw;
         }
         .navbar-mobile-logo {
@@ -911,7 +1209,7 @@
             width: 7.5vw;
         }
         .body {
-            padding-left: 15vw;
+            padding-left: 20vw;
         }
         .body-card {
             border-radius: 4vw;
@@ -949,11 +1247,11 @@
             left: 11.8vw;
         }
         .area {
-            height: 290vh;
+            height: 530vw;
         }
         .popup {
             top: 15%;
-            left: 64%;
+            left: 63%;
             width: 280px;
             height: 360px;
         }
@@ -1008,6 +1306,46 @@
         }
         .body-card:hover .center-card {
             color: #4e54c8;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .hamburger {
+            position: relative;
+            left: 80vw;
+            bottom: 10vw;
+        }
+        .logotype {
+            position: relative;
+            padding-top: 5vw;
+        }
+        .navbar-mobile-menu {
+            left: 8vw;
+        }
+        .registration span {
+            font-size: 2.9vw;
+            left: 5vw;
+            bottom: 5.3vw;
+            position: relative;
+        }
+        .fa-adaptive {
+            position: relative;
+            right: 14vw;
+            bottom: 1vw;
+        }
+        .body {
+            padding-left: 17vw;
+        }
+        .popup-buttons {
+            padding-top: 25vw;
+            padding-left: 0vw;
+        }
+        .popup-buttons {
+            padding-top: 25vw;
+            padding-left: 2vw;
+        }
+        .area {
+            height: 550vw;
         }
     }
     
@@ -1165,7 +1503,7 @@
             width: 7.5vw;
         }
         .body {
-            padding-left: 12vw;
+            padding-left: 16.3vw;
         }
         .body-card {
             border-radius: 4vw;
@@ -1203,7 +1541,7 @@
             left: 14.8vw;
         }
         .area {
-            height: 260vh;
+            height: 570vw;
         }
         .popup {
             top: 15%;
@@ -1294,7 +1632,7 @@
         }
         .hamburger {
             position: relative;
-            left: 68vw;
+            left: 79vw;
             bottom: 9vw;
         }
         .navbar-mobile-menu {
@@ -1306,14 +1644,14 @@
             width: 80vw;
             top: 20vw;
             border-radius: 1vw;
-            left: 6vw;
+            left: 10vw;
             height: 0vw;
             -webkit-transition: height 0.8s;
             -moz-transition: height 0.8s;
             transition: height 0.8s;
         }
         .mobile-background-active {
-            height: 90vw;
+            height: 100vw;
             background: white !important;
         }
         .mobile-background-default {
@@ -1360,7 +1698,7 @@
         }
         .hamburger {
             position: relative;
-            left: 78vw;
+            left: 79vw;
             bottom: 11vw;
         }
         .auth {
@@ -1375,6 +1713,7 @@
             border: 1px #4e54c8 solid;
             width: 40vw;
             height: 8vw;
+            top: 9.5vw;
         }
         .fa-user {
             position: relative;
@@ -1386,7 +1725,6 @@
             background: #4e54c8;
             z-index: 999;
             left: 29vw;
-            bottom: 4vw;
             height: 0.1vw;
             width: 5.9vw;
         }
@@ -1418,6 +1756,9 @@
             height: 0.1vw;
             width: 7.5vw;
         }
+        .body {
+            padding-left: 15vw;
+        }
         .body-card {
             border-radius: 4vw;
         }
@@ -1428,11 +1769,11 @@
             margin-bottom: 10vw;
         }
         .fab {
-            font-size: 7.5vw;
+            font-size: 9.5vw;
             margin-right: 0.7vw;
         }
         .header-card span {
-            font-size: 4.3vw;
+            font-size: 5.3vw;
             padding-left: 2vw;
         }
         .header-card {
@@ -1441,25 +1782,25 @@
             padding-top: 5vw;
         }
         .center-card {
-            width: 55vw;
+            width: 58vw;
             padding-top: 15vw;
-            font-size: 2.8vw;
-            left: 6vw;
+            font-size: 3.5vw;
+            left: 5vw;
         }
         .body-card-button {
             font-size: 2.5vw;
             height: 7vw;
             top: 30.5vw;
             width: 35vw;
-            left: 14.8vw;
+            left: 15.8vw;
         }
         .area {
-            height: 380vh;
+            height: 590vw;
         }
         .popup {
             top: 15%;
-            left: 68%;
-            width: 250px;
+            left: 65.5%;
+            width: 270px;
             height: 325px;
         }
         .popup-header i {
