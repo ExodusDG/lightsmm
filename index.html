@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/52c0c2186d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <title>LightSMM - лучший сервис по накрутке!</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/hamburger.css">
+</head>
+
+<body>
+    <!-- CSS BACKGROUND -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- MAIN CONTENT-->
+    <div class="main">
+        <div class="container-fluid">
+            <!-- NAVBAR (DESKTOP)-->
+            <div class="navbar">
+                <ul class="d-flex">
+                    <li>
+                        <div class="logotype d-flex">
+                            <div class="logotype-light">LIGHT</div>
+                            <div class="logotype-smm">SMM</div>
+                            <div class="logotype-lightning"><i class="fas fa-bolt"></i></div>
+                        </div>
+                    </li>
+                    <div class="navbar-links d-flex">
+                        <li class="navbar-link">
+                            <p>Служба поддержки</p>
+                            <hr class="menu-hr">
+                        </li>
+                        <li class="navbar-link">
+                            <p>FAQ</p>
+                            <hr class="menu-hr">
+                        </li>
+                        <li class="navbar-link">
+                            <p>Правила</p>
+                            <hr class="menu-hr">
+                        </li>
+                        <li class="navbar-link">
+                            <p>API</p>
+                            <hr class="menu-hr">
+                        </li>
+                        <li class="auth"><i class="fas fa-sign-in-alt"></i> Вход</li>
+                        <li><button class="registration"><i class="fas fa-user"></i> <span>Регистрация</span></button>
+                            <div class="vertborder"></div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <!-- NAVBAR MOBILE -->
+            <nav class="navbar-mobile">
+                <ul>
+                    <li>
+                        <div class="logotype d-flex">
+                            <div class="logotype-light">LIGHT</div>
+                            <div class="logotype-smm">SMM</div>
+                            <div class="logotype-lightning"><i class="fas fa-bolt"></i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button style="outline: none;" class="hamburger hamburger--spring" type="button" id="hamburger-id">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+                    </li>
+                </ul>
+                <div class="navbar-mobile-menu">
+                    <ul class="mobile-navbar-links">
+                        <a style="color: white;" href="#">
+                            <li>
+                                <p class="text-center mob-n-links">Служба поддержки</p>
+                                <hr class="navbar-hr">
+                            </li>
+                        </a>
+                        <a style="color: white;" href="#">
+                            <li>
+                                <p class="text-center mob-n-links">FAQ</p>
+                                <hr class="navbar-hr">
+                            </li>
+                        </a>
+                        <a style="color: white;" href="#">
+                            <li>
+                                <p class="text-center mob-n-links">Правила</p>
+                                <hr class="navbar-hr">
+                            </li>
+                        </a>
+                        <a style="color: white;" href="#">
+                            <li>
+                                <p class="text-center mob-n-links">API</p>
+                                <hr class="navbar-hr">
+                            </li>
+                            <li class="auth-mob"><i class="fas fa-sign-in-alt"></i>
+                                <span>Вход</span>
+                                <hr class="navbar-hr">
+                            </li>
+                            <li><button class="registration" style="outline: none;"> <div class="fa-adaptive"><i class="fas fa-user"></i></div> <span>Регистрация</span></button>
+                                <div class="vertborder"></div>
+                                <hr class="navbar-hr">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <!-- CARDS -->
+            <div class="body">
+                <div class="body-card">
+                    <div class="header-card d-flex">
+                        <i class="fab fa-instagram"></i> <span>Instagram</span>
+                    </div>
+                    <div class="center-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <button id="instagram" class="body-card-button">КУПИТЬ</button>
+                </div>
+                <div class="body-card">
+                    <div class="header-card d-flex">
+                        <i class="fab fa-vk"></i> <span>Вконтакте</span>
+                    </div>
+                    <div class="center-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <button id="vkontakte" class="body-card-button">КУПИТЬ</button>
+                </div>
+                <div class="body-card">
+                    <div class="header-card d-flex">
+                        <i class="fab fa-youtube"></i> <span>YouTube</span>
+                    </div>
+                    <div class="center-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <button id="youtube" class="body-card-button">КУПИТЬ</button>
+                </div>
+                <div class="body-card">
+                    <div class="header-card d-flex">
+                        <i class="fab fa-tiktok"></i> <span>TikTok</span>
+                    </div>
+                    <div class="center-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <button id="tiktok" class="body-card-button">КУПИТЬ</button>
+                </div>
+                <div class="body-card">
+                    <div class="header-card d-flex">
+                        <i class="fab fa-telegram-plane"></i> <span>Telegram</span>
+                    </div>
+                    <div class="center-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <button id="telegram" class="body-card-button">КУПИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL WINDOWS-->
+    <div class="popup-fade">
+        <div class="popup">
+
+        </div>
+    </div>
+    <!--INSTAGRAM-->
+    <script id="instagram_block" type="text/html">
+        <a class="popup-close" style="color: white;" href="#">X</a>
+        <div class="popup-header text-center">
+            <i class="fab fa-instagram"></i> <span>Instagram</span>
+        </div>
+        <div class="popup-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="popup-buttons">
+            <div class="buttons d-flex">
+                <p>Подписчики</p> <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Лайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Дизлайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+        </div>
+    </script>
+    <!-- ВКОНТАКТЕ -->
+    <script id="vkontakte_block" type="text/html">
+        <a class="popup-close" style="color: white;" href="#">X</a>
+        <div class="popup-header text-center">
+            <i class="fab fa-vk"></i> <span>Вконтакте</span>
+        </div>
+        <div class="popup-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="popup-buttons">
+            <div class="buttons d-flex">
+                <p>Подписчики</p> <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Лайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Дизлайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+        </div>
+    </script>
+
+    <!-- YouTube -->
+    <script id="youtube_block" type="text/html">
+        <a class="popup-close" style="color: white;" href="#">X</a>
+        <div class="popup-header text-center">
+            <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </div>
+        <div class="popup-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="popup-buttons">
+            <div class="buttons d-flex">
+                <p>Подписчики</p> <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Лайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Дизлайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+        </div>
+    </script>
+
+    <!-- TikTok -->
+    <script id="tiktok_block" type="text/html">
+        <a class="popup-close" style="color: white;" href="#">X</a>
+        <div class="popup-header text-center">
+            <i class="fab fa-tiktok"></i> <span>TikTok</span>
+        </div>
+        <div class="popup-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="popup-buttons">
+            <div class="buttons d-flex">
+                <p>Подписчики</p> <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Лайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Дизлайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+        </div>
+    </script>
+
+    <!-- Telegram -->
+    <script id="telegram_block" type="text/html">
+        <a class="popup-close" style="color: white;" href="#">X</a>
+        <div class="popup-header text-center">
+            <i class="fab fa-telegram-plane"></i> <span>Telegram</span>
+        </div>
+        <div class="popup-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="popup-buttons">
+            <div class="buttons d-flex">
+                <p>Подписчики</p> <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Лайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+            <div class="buttons d-flex">
+                <p>Дизлайки</p>
+                <a href="#"><button class="buy-button">Купить</button></a>
+            </div>
+        </div>
+    </script>
+</body>
+
+</html>
